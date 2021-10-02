@@ -1,5 +1,5 @@
 import { Image, LogBox, SafeAreaView, StyleSheet, View } from 'react-native';
-import { NavOptions, SearchPlace } from '../components';
+import { NavFav, NavOptions, SearchPlace } from '../components';
 import React, { useEffect } from 'react';
 import { setDestination, setOrigin } from '../Redux/slices/navSlice';
 
@@ -32,6 +32,7 @@ const HomeScreen = () => {
         <SearchPlace handleOnSearch={onSearch}/>
        
         <NavOptions />
+        <NavFav />
       </View>
     </SafeAreaView >
   )
